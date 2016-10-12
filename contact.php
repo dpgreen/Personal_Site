@@ -5,7 +5,7 @@ echo $action;
 $name=$_REQUEST['name'];
 $email=$_REQUEST['email'];
 $message=$_REQUEST['text'];
-echo $REQUEST;
+var_dump($_HTTP_REQUEST);
 
 if (($name=="")||($email=="")||($message==""))
     {
