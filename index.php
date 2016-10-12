@@ -62,7 +62,7 @@
             <div class="row">
                 <h3> </h3>
 
-                <h1>Daniel Green <?php echo "test"; ?> </h1>
+                <h1>Daniel Green </h1>
 
                 <p>Product and Operational Strategist</p>
 
