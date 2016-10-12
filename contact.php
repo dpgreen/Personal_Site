@@ -1,6 +1,14 @@
 <?php
 session_start();
-print_r($_REQUEST);
+
+var_dump( $_POST );
+ini_set('display_errors',1); 
+error_reporting(E_ALL);
+
+if(empty($_SERVER['CONTENT_TYPE']))
+{ 
+  $_SERVER['CONTENT_TYPE'] = "application/x-www-form-urlencoded"; 
+}
 
 $action=$_REQUEST['action'];
 echo $action;
