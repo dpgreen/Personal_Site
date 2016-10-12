@@ -1,7 +1,7 @@
 <?php
 session_start();
-print_r($_Post);
-print_r($_SERVER['REQUEST_METHOD']);
+print_r($_POST);
+
 $action=$_REQUEST['action'];
 echo $action;
 $name=$_REQUEST['name'];
