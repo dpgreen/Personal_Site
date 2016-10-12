@@ -8,9 +8,9 @@ $message=$_REQUEST['text'];
 
 if (($name=="")||($email=="")||($message==""))
     {
-		echo $_REQUEST['name'];
-		echo $_REQUEST['email'];
-		echo $_REQUEST['text'];
+		echo $name;
+		echo $email;
+		echo $message;
 		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
 	}
 else{		
