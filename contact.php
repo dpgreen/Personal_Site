@@ -1,6 +1,6 @@
 <?php
 session_start();
-print_r($_REQUEST);
+print_r($_Post);
 print_r($_SERVER['REQUEST_METHOD']);
 $action=$_REQUEST['action'];
 echo $action;
