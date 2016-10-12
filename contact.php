@@ -5,7 +5,8 @@ echo $action;
 $name=$_REQUEST['name'];
 $email=$_REQUEST['email'];
 $message=$_REQUEST['text'];
-print(file_get_contents("php://input"));
+$Test = file_get_contents("php://input");
+echo $Test;
 
 if (($name=="")||($email=="")||($message==""))
     {
