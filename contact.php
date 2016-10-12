@@ -8,16 +8,7 @@ $message=$_REQUEST['text'];
 
 if (($name=="")||($email=="")||($message==""))
     {
-		echo $_SERVER['PHP_SELF'];
-echo "<br>";
-echo $_SERVER['SERVER_NAME'];
-echo "<br>";
-echo $_SERVER['QUERY_STRING'];
-echo "<br>";
-echo $_SERVER['HTTP_REFERER'];
-echo "<br>";
-echo $_SERVER['REQUEST_METHOD'];
-
+		echo $name;
 		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
 	}
 else{		
