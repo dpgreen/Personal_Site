@@ -5,12 +5,13 @@ echo $action;
 $name=$_REQUEST['name'];
 $email=$_REQUEST['email'];
 $message=$_REQUEST['text'];
+echo "Test";
 
 if (($name=="")||($email=="")||($message==""))
     {
-		echo $name;
-		echo $email;
-		echo $message;
+		print $name;
+		print $email;
+		print $message;
 		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
 	}
 else{		
