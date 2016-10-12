@@ -1,9 +1,10 @@
 <?php
 session_start();
 
-var_dump( $_POST );
 ini_set('display_errors',1); 
 error_reporting(E_ALL);
+$action=$_POST['action'];
+echo $action;
 
 if(empty($_SERVER['CONTENT_TYPE']))
 { 
@@ -11,7 +12,6 @@ if(empty($_SERVER['CONTENT_TYPE']))
 }
 
 $action=$_REQUEST['action'];
-echo $action;
 $name=$_REQUEST['name'];
 $email=$_REQUEST['email'];
 $message=$_REQUEST['text'];
