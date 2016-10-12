@@ -3,7 +3,7 @@ session_start();
 
 ini_set('display_errors',1); 
 error_reporting(E_ALL);
-$action=$_POST['action'];
+$action=$_POST['name'];
 echo $action;
 
 if(empty($_SERVER['CONTENT_TYPE']))
