@@ -5,8 +5,9 @@ echo $action;
 $name=$_REQUEST['name'];
 $email=$_REQUEST['email'];
 $message=$_REQUEST['text'];
-$Test = file_get_contents("php://input");
-echo $Test;
+$rest_json = file_get_contents("php://input");
+$_POST = json_decode($rest_json, true);
+echo $_POST;
 
 if (($name=="")||($email=="")||($message==""))
     {
