@@ -12,13 +12,12 @@ if (($name=="")||($email=="")||($message==""))
 echo "<br>";
 echo $_SERVER['SERVER_NAME'];
 echo "<br>";
-echo $_SERVER['HTTP_HOST'];
+echo $_SERVER['QUERY_STRING'];
 echo "<br>";
 echo $_SERVER['HTTP_REFERER'];
 echo "<br>";
-echo $_SERVER['HTTP_USER_AGENT'];
-echo "<br>";
-echo $_SERVER['SCRIPT_NAME'];
+echo $_SERVER['REQUEST_METHOD'];
+
 		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
 	}
 else{		
