@@ -1,5 +1,6 @@
 <?php
 session_start();
+print_r($_REQUEST);
 $action=$_REQUEST['action'];
 echo $action;
 $name=$_REQUEST['name'];
@@ -8,7 +9,6 @@ $message=$_REQUEST['text'];
 
 if (($name=="")||($email=="")||($message==""))
     {
-		echo $name;
 		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
 	}
 else{		
