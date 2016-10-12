@@ -1,6 +1,6 @@
 <?php
 session_start();
-print_r($_POST);
+print_r($_REQUEST);
 
 $action=$_REQUEST['action'];
 echo $action;
