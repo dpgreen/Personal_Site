@@ -265,7 +265,7 @@
                 <div class="form">
                     <form action="http://www.breakingintoproduct.com/contact.php" method="post">
                         <div class="sbtn col-md-12 text-center">
-                            <input class="name form-input" type="text" placeholder="NAME">
+                            <input class="name form-input" type="text" placeholder="NAME" value="Name">
                             <input class="email form-input" type="email" placeholder="EMAIL">
                             <input class="message form-input" type="text" placeholder="MESSAGE">
                             <input class="submit-btn" type="submit">
