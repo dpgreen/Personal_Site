@@ -5,15 +5,20 @@ echo $action;
 $name=$_REQUEST['name'];
 $email=$_REQUEST['email'];
 $message=$_REQUEST['text'];
-$rest_json = file_get_contents("php://input");
-$_POST = json_decode($rest_json, true);
-echo $_POST;
 
 if (($name=="")||($email=="")||($message==""))
     {
-		print $name;
-		print $email;
-		print $message;
+		echo $_SERVER['PHP_SELF'];
+echo "<br>";
+echo $_SERVER['SERVER_NAME'];
+echo "<br>";
+echo $_SERVER['HTTP_HOST'];
+echo "<br>";
+echo $_SERVER['HTTP_REFERER'];
+echo "<br>";
+echo $_SERVER['HTTP_USER_AGENT'];
+echo "<br>";
+echo $_SERVER['SCRIPT_NAME'];
 		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
 	}
 else{		
