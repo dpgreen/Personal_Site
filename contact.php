@@ -11,10 +11,9 @@ if(empty($_SERVER['CONTENT_TYPE']))
   $_SERVER['CONTENT_TYPE'] = "application/x-www-form-urlencoded"; 
 }
 
-$action=$_REQUEST['action'];
 $name=$_REQUEST['name'];
 $email=$_REQUEST['email'];
-$message=$_REQUEST['text'];
+$message=$_REQUEST['message'];
 
 if (($name=="")||($email=="")||($message==""))
     {
