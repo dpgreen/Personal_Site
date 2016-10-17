@@ -263,12 +263,12 @@
         <div class="container">
             <div class="row">
                 <div class="form">
-                    <form action="http://www.breakingintoproduct.com/contact.php" method="post">
+                    <form action="contact.php" method="post">
                         <div class="sbtn col-md-12 text-center">
-                            <input class="name form-input" type="text" placeholder="NAME" name="name" id="name">
-                            <input class="email form-input" type="email" placeholder="EMAIL" name="email" id="email">
-                            <input class="message form-input" type="text" placeholder="MESSAGE" name="message" id="message">
-                            <input class="submit-btn" type="submit">
+                            <input class="name form-input" type="text" placeholder="NAME" name="name">
+                            <input class="email form-input" type="email" placeholder="EMAIL" name="email">
+                            <input class="message form-input" type="text" placeholder="MESSAGE" name="message">
+                            <input class="submit-btn" type="submit" name="submit">
                         </div>
                     </form>
                 </div>
