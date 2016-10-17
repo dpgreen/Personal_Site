@@ -1,10 +1,4 @@
 <?php
-//session_start();
-
-ini_set('display_errors',1); 
-error_reporting(E_ALL);
-$action=$_POST['name'];
-echo $action;
 
 if(empty($_SERVER['CONTENT_TYPE']))
 { 
@@ -22,7 +16,7 @@ if (($name=="")||($email=="")||($message==""))
 else{		
 	    $from="From: $name<$email>\r\nReturn-path: $email";
         $subject="Message sent using your contact form";
-		mail("youremail@yoursite.com", $subject, $message, $from);
+		mail("dpgreen89@gmail.com", $subject, $message, $from);
 		echo "Email sent!";
     }
 ?>
