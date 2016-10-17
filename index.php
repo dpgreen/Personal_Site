@@ -263,7 +263,7 @@
         <div class="container">
             <div class="row">
                 <div class="form">
-                    <form role = 'form' action="/contact.php" method="post">
+                    <form role = 'form' method="POST" action="contact.php">
                         <div class="sbtn col-md-12 text-center">
                             <input class="name form-input" type="text" placeholder="NAME" name="name" id="name" value="">
                             <input class="email form-input" type="email" placeholder="EMAIL" name="email" id="email" value="">
