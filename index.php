@@ -263,12 +263,12 @@
         <div class="container">
             <div class="row">
                 <div class="form">
-                    <form action="contact.php" method="post">
+                    <form role = 'form' action="contact.php" method="post">
                         <div class="sbtn col-md-12 text-center">
-                            <input class="name form-input" type="text" placeholder="NAME" name="name">
-                            <input class="email form-input" type="email" placeholder="EMAIL" name="email">
-                            <input class="message form-input" type="text" placeholder="MESSAGE" name="message">
-                            <input class="submit-btn" type="submit" name="submit">
+                            <input class="name form-input" type="text" placeholder="NAME" name="name" id="name" value="">
+                            <input class="email form-input" type="email" placeholder="EMAIL" name="email" id="email" value="">
+                            <input class="message form-input" type="text" placeholder="MESSAGE" name="message" id="message" value="">
+                            <input class="submit-btn" type="submit" name="submit" id="submit" value="send">
                         </div>
                     </form>
                 </div>
