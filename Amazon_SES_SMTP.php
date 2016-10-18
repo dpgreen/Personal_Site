@@ -26,7 +26,7 @@ define('PORT', '587');
 define('SUBJECT','Amazon SES test (SMTP interface accessed using PHP)');
 define('BODY','This email was sent through the Amazon SES SMTP interface by using PHP.');
 
-require_once 'Mail.php';
+require_once '/home/ec2-user/pear/share/pear/Mail/mail.php';
 
 $headers = array (
   'From' => SENDER,
