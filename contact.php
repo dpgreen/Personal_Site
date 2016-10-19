@@ -7,10 +7,9 @@ define('RECIPIENT', 'dpgreen89@gmail.com');
 define('USERNAME','AKIAIO33MXS74DQCTI7Q');
 define('PASSWORD','ArFM6IB+owV4Fh9evsGaODVaZZEOHcOeaD9p9Ze+dhK+');
 define('HOST', 'email-smtp.us-west-2.amazonaws.com');
-define('PORT', '587');  
-		
+define('PORT', '587');  	
 define('SUBJECT','Incoming Inquiry from BreakingIntoProduct.com!');
-define('BODY','test send')
+define('BODY','test send');
 //define('BODY',"name: ".$name."\nEmail :".$email."\n\n".$message);
 
 		
