@@ -2,11 +2,33 @@
 set_include_path('.:/home/ec2-user/pear/share/pear/');
 require_once 'Mail.php';
 
-error_reporting(E_ALL);
-if(empty($_SERVER['CONTENT_TYPE']))
-{ 
-  $_SERVER['CONTENT_TYPE'] = "application/x-www-form-urlencoded"; 
-}
+define('SENDER', 'dpgreen89@gmail.com');
+define('RECIPIENT', 'dpgreen89@gmail.com');
+define('USERNAME','AKIAIO33MXS74DQCTI7Q');
+define('PASSWORD','ArFM6IB+owV4Fh9evsGaODVaZZEOHcOeaD9p9Ze+dhK+');
+define('HOST', 'email-smtp.us-west-2.amazonaws.com');
+define('PORT', '587');  
+		
+define('SUBJECT','Incoming Inquiry from BreakingIntoProduct.com!');
+define('BODY','test send')
+//define('BODY',"name: ".$name."\nEmail :".$email."\n\n".$message);
+
+		
+		
+
+$headers = array (
+	'From' => SENDER,
+	'To' => RECIPIENT,
+	'Subject' => SUBJECT);
+
+$smtpParams = array (
+	'host' => HOST,
+	'port' => PORT,
+	'auth' => true,
+	'username' => USERNAME,
+	'password' => PASSWORD
+);
+
 
 $name=$_REQUEST['name'];
 $email=$_REQUEST['email'];
@@ -17,32 +39,7 @@ if (($name=="")||($email=="")||($message==""))
 		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
 	}
 else{		
-	    define('SENDER', 'dpgreen89@gmail.com');
-    	define('RECIPIENT', 'dpgreen89@gmail.com');
-		define('USERNAME','AKIAIO33MXS74DQCTI7Q');
-		define('PASSWORD','ArFM6IB+owV4Fh9evsGaODVaZZEOHcOeaD9p9Ze+dhK+');
-		define('HOST', 'email-smtp.us-west-2.amazonaws.com');
-		define('PORT', '587');  
-		
-		define('SUBJECT','Incoming Inquiry from BreakingIntoProduct.com!');
-		define('BODY','test send')
-		//define('BODY',"name: ".$name."\nEmail :".$email."\n\n".$message);
-
-		
-		
-
-		$headers = array (
-  		'From' => SENDER,
-  		'To' => RECIPIENT,
-  		'Subject' => SUBJECT);
-
-		$smtpParams = array (
- 		'host' => HOST,
- 		'port' => PORT,
-  		'auth' => true,
-  		'username' => USERNAME,
- 		'password' => PASSWORD
-		);
+	    
 
  
 		$mail = Mail::factory('smtp', $smtpParams);
