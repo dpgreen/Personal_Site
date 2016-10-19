@@ -1,5 +1,7 @@
 <?php
-set_include_path('.:/home/ec2-user/pear/share/pear/'); 
+set_include_path('.:/home/ec2-user/pear/share/pear/');
+require_once 'Mail.php';
+
 error_reporting(E_ALL);
 if(empty($_SERVER['CONTENT_TYPE']))
 { 
@@ -27,7 +29,7 @@ else{
 		//define('BODY',"name: ".$name."\nEmail :".$email."\n\n".$message);
 
 		
-		require_once 'Mail.php';
+		
 
 		$headers = array (
   		'From' => SENDER,
