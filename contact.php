@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL);
 if(empty($_SERVER['CONTENT_TYPE']))
 { 
   $_SERVER['CONTENT_TYPE'] = "application/x-www-form-urlencoded"; 
