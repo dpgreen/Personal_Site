@@ -25,8 +25,8 @@ else{
 		define('BODY','test send')
 		//define('BODY',"name: ".$name."\nEmail :".$email."\n\n".$message);
 
-		set_include_path('/home/ec2-user/pear/share/pear/'); 
-		require_once 'Mail.php';
+		//set_include_path('/home/ec2-user/pear/share/pear/'); 
+		require_once '/home/ec2-user/pear/share/pear/Mail.php';
 
 		$headers = array (
   		'From' => SENDER,
