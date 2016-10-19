@@ -12,9 +12,6 @@ define('SUBJECT','Incoming Inquiry from BreakingIntoProduct.com!');
 define('BODY','test send');
 //define('BODY',"name: ".$name."\nEmail :".$email."\n\n".$message);
 
-		
-		
-
 $headers = array (
 	'From' => SENDER,
 	'To' => RECIPIENT,
@@ -29,9 +26,13 @@ $smtpParams = array (
 );
 
 
-$name=$_REQUEST['name'];
-$email=$_REQUEST['email'];
-$message=$_REQUEST['message'];
+$name = "test";
+$email = "test";
+$message = "test";
+
+//$name = $_REQUEST['name'];
+//$email = $_REQUEST['email'];
+//$message = $_REQUEST['message'];
 
 if (($name=="")||($email=="")||($message==""))
     {
