@@ -57,12 +57,3 @@ else{
 		//echo "Email sent!";
     }
 ?>
-
-
-
-
-
-
-
-
-?>
