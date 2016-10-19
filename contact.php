@@ -22,7 +22,8 @@ else{
 		define('PORT', '587');  
 		
 		define('SUBJECT','Incoming Inquiry from BreakingIntoProduct.com!');
-		define('BODY',"name: ".$name."\nEmail :".$email."\n\n".$message);
+		define('BODY','test send')
+		//define('BODY',"name: ".$name."\nEmail :".$email."\n\n".$message);
 
 		set_include_path('/home/ec2-user/pear/share/pear/'); 
 		require_once 'Mail.php';
