@@ -25,11 +25,14 @@ $smtpParams = array (
 	'password' => PASSWORD
 );
 
+$mail = Mail::factory('smtp', $smtpParams);
 
 $name = "test";
 $email = "test";
 $message = "test";
 
+
+$result = $mail->send(RECIPIENT, $headers, BODY);
 //$name = $_REQUEST['name'];
 //$email = $_REQUEST['email'];
 //$message = $_REQUEST['message'];
@@ -42,8 +45,8 @@ else{
 	    
 
  
-		$mail = Mail::factory('smtp', $smtpParams);
-		$result = $mail->send(RECIPIENT, $headers, BODY);
+		//$mail = Mail::factory('smtp', $smtpParams);
+		//$result = $mail->send(RECIPIENT, $headers, BODY);
 
 		if (PEAR::isError($result)) {
 		  echo("Email not sent. " .$result->getMessage() ."\n");
